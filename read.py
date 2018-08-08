@@ -6,9 +6,11 @@ with open('reviews.txt', 'r') as f:
 		count += 1 #count一直加1
 		if count % 1000 == 0:  # %是用來求餘數。
 		    print(len(data))
-print(len(data))
+print('檔案讀取完了, 總共有', len(data), '筆資料')
 
-#print(data) 全印出來。
-print(data[0]) #只印出第一筆。
-print('----------------')
-print(data[1]) #只印出第二筆。
+
+sum_len = 0
+for d in data:
+	sum_len = sum_len + len(d)
+
+print('平均長度等於', sum_len/len(data))
