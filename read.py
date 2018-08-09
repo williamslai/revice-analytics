@@ -25,3 +25,4 @@ for d in data:  #把清單中的東西一個個拿出來。
     if len(d) < 100: #if 你的長度小於100
     	new.append(d) #我就把你(d:留言)裝進新清單(new)裡面。
 print('一共有', len(new), '筆清單')
+print(new[0])
