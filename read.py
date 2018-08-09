@@ -26,3 +26,11 @@ for d in data:  #把清單中的東西一個個拿出來。
     	new.append(d) #我就把你(d:留言)裝進新清單(new)裡面。
 print('一共有', len(new), '筆清單')
 print(new[0])
+
+
+good = []
+for d in data:  
+	if 'good' in d: #看看留言清單中有沒有包含good
+		good.append(d) #有的話就把留言加到good清單中。
+print('一共有', len(good), '筆留言提到good')
+print('第一筆留言：' ,good[0])
